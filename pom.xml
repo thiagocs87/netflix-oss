@@ -84,7 +84,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
 		<!-- SLFf4J -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>

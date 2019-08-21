@@ -1,11 +1,15 @@
 package br.com.client;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+import com.netflix.discovery.EurekaClient;
 
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -29,6 +33,10 @@ public class Application {
         
     }
 
+    @Autowired
+    @Lazy
+    private EurekaClient eurekaClient;
+    
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
