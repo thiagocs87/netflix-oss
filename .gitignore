@@ -5,6 +5,8 @@
 
 .settings/
 .project
+.classpath
+.factorypath
 
 # Log file
 *.log
