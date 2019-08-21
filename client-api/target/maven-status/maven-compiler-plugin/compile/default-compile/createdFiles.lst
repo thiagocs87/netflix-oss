@@ -1,0 +1,3 @@
+br/com/clickbus/api/PlaceResource.class
+br/com/clickbus/api/event/ResourceCreatedEvent.class
+br/com/clickbus/api/event/listener/ResourceCreatedListener.class

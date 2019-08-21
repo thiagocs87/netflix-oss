@@ -1,0 +1,9 @@
+br/com/clickbus/persistence/exception/ErrorOnTryRemovePlaceException.class
+br/com/clickbus/persistence/repository/PlaceRepository.class
+br/com/clickbus/persistence/exception/PlaceNotFoundException.class
+br/com/clickbus/persistence/exception/ErrorOnTrySavePlaceException.class
+br/com/clickbus/persistence/PlacePersistenceImpl.class
+br/com/clickbus/persistence/PlaceOperations.class
+br/com/clickbus/persistence/entity/Place.class
+br/com/clickbus/persistence/exception/ErrorOnTryGetPlaceException.class
+br/com/clickbus/persistence/exception/ErrorOnTryListPlaceException.class
