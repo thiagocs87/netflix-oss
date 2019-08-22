@@ -25,5 +25,10 @@
 			<groupId>br.com.client.test</groupId>
 			<artifactId>client-persistence</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>br.com.client.test</groupId>
+			<artifactId>client-integration-external</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>

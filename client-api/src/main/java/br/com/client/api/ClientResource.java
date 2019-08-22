@@ -23,7 +23,7 @@ public class ClientResource {
 
 	@Autowired
 	private ApplicationEventPublisher publisher;
-	
+		
 	@Autowired
 	private ClientService service;
 	
@@ -49,8 +49,8 @@ public class ClientResource {
     @PostMapping(value = "/client", produces = "application/json")
     public ResponseEntity<?> postClient(@Valid @RequestBody ClientDto place, HttpServletResponse response, HttpServletRequest request) {
         Client savedClient = service.save(place);
-		publisher.publishEvent(new ResourceCreatedEvent(this, response, savedClient.getId()));
-        return ResponseEntity.status(HttpStatus.CREATED).body(savedClient);
+        publisher.publishEvent(new ResourceCreatedEvent(this, response, savedClient.getClientId()));
+		return ResponseEntity.status(HttpStatus.CREATED).body(savedClient);
     }
 
     @ApiOperation(value = "Update a client")

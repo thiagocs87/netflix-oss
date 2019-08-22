@@ -14,10 +14,9 @@ public interface ClientPersistence{
 	public boolean delete(Long id);	
 
 	public default void merge(Client founded, Client client) {
-		founded.setCity(client.getCity());
 		founded.setName(client.getName());
 		founded.setSurename(client.getSurename());
-		founded.setState(client.getState());
+		founded.setAddress(client.getAddress());
 	}
 
 }
