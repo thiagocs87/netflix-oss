@@ -35,7 +35,7 @@
 		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
 
 		<!-- SPRINGFOX-SWAGGER2 VERSION -->
-		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+		<springfox-swagger2.version>2.10.0</springfox-swagger2.version>
 
 	</properties>
 
